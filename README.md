@@ -120,6 +120,15 @@
     When there are two or more selectors with the same specifity, cascade is applied, the last selector will be applied
 
 ## Inheritance
-Some parent properties are applied to their childs
-   
+Some parent properties are applied to their childs:
+```
+<h1 id="title" class="title">Fundamentos de <span>CSS</span></h1>
+```
+span tag gets some styles from h1 tag. If not everything will be a chaos
+Inherited properties:
+- color properties
+- font properties
+
+Links `<a></a>` wont inherit any property, we can force inheritance with `inherit`.
+We can avoid inheritance with, `initial`
  

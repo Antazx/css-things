@@ -1,0 +1,24 @@
+body {
+    background-color: darkslategrey;
+}
+
+.title {
+    color: cadetblue;
+    font-size: 55px;
+}
+
+.text {
+    color: red;
+}
+
+.link {
+    color: inherit;
+}
+
+.list {
+    color: indianred;
+}
+
+.list-item-extra {
+    color: initial;
+}
