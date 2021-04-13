@@ -35,3 +35,72 @@
     ```
     Don't use this method, it will load the css asynchronously, bad user experience, the html loads and after the css
 
+## CSS Syntax
+- Selector: element to which we are going to apply styles
+- Property: what we are going to change
+- Value: new value
+- Decalaration: Property:value
+- Rule: Selector + decaration(s)
+
+    ```
+    selector {
+        property: value; 
+        property2: value;
+        ...
+        properyN: value;
+    }
+    ```
+
+## Selector types
+- Simple selector:
+
+    - Elemental selectors:
+        - Universal selector: `* {...}`
+        - Tag/Type selector: `body {...}`
+
+    - Atributte selectors:
+        - ID selector: `#id {...}` **case sensitive** not recomended, we want to be able to reuse styles
+        - Class selector: `.class {...}` the good ones
+        - Other atributtes:
+        
+            ```
+            [href] {...}
+
+            [atributte = "value"] {...} atributte equal to
+
+            [atributte ^= "value"] {...} atributte starts with
+
+            [atributte *= "value"] {...} atributte contains
+
+            [atributte $= "value"] {...} atributte ends with
+
+            [atributte |= "value"] {...} atributte starts with value-*
+            ```
+
+- Composed selectors:
+    - Grouped selectors:
+        ```
+        .class,
+        .class-1,
+        .class-2 {...}
+        ```
+    - Combinatorial selectors:
+        - Descendant selector:
+            ```
+            div .class {...}
+            ```
+            Not use depth < 2 levels, perfomance problems
+        - Next brother element selector:
+            ```
+            h4 + p {...}
+            ```
+        - All brothers element selector:
+            ```
+            h4 ~ p {...}
+            ```
+        - Direct childs
+            ```
+            div > p {...}
+            ```
+    - Pseudoclassess & pseudoelements
+ 

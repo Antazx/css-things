@@ -1,0 +1,78 @@
+/* Universal selector */
+* {
+    background-color: aliceblue;
+}
+
+/* Tag selector */
+h1 {
+    background-color: blueviolet;
+}
+
+p {
+    background-color: burlywood;
+}
+
+/* ID selector */
+#subtitle {
+    background-color: yellowgreen;
+}
+
+/* Class selector */
+.paragraph {
+    background-color: tomato;
+}
+
+/* Other selector, with href attribute and href + value*/
+[href] {
+    background-color: turquoise;
+}
+
+[href = "wowowo"] {
+    background-color: teal;
+}
+
+[href ^= "h"] {
+    background-color: tan;
+}
+
+[href *= "123"] {
+    background-color: springgreen;
+}
+
+[href$= "end"] {
+    background-color: orange;
+}
+
+[lang |= "es"] {
+    background-color: goldenrod;
+}
+
+/* Grouped selectors */
+.class,
+.class-1,
+.class-2 {
+    background-color: lightgreen;
+}
+
+/* Descendant selector */
+div p {
+    background-color: lightskyblue;
+}
+
+div .p {
+    background-color: lime;
+}
+
+/* One next brother selector */
+h4 + p {
+    background-color: magenta;
+}
+
+/* All next brother selector */
+h5 ~ p {
+    background-color: maroon;
+}
+
+.container > p {
+    background-color: linen;
+}
