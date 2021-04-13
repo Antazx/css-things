@@ -103,4 +103,23 @@
             div > p {...}
             ```
     - Pseudoclassess & pseudoelements
+## Specifity & cascade
+- Speciffity: sets how specific a selector is to know which style to apply, the browser calculates the specifity and the style of the selector with the highest value is applied, it's calculated in the following way:
+
+    | Selector                              | Specifity value   |
+    | ------------------------------------- | :---------------: |
+    | Tags and pseudoelements               | 001               |
+    | Classess, atributtes y pseudoclassess | 010               |
+    | Ids                                   | 100               |
+    | Line styles                           | 1000              |
+
+    So tag + class + id = 001 + 010 + 100 = 111
+    !important overwrites all specifities **Dont use, bad practice**
+    [Check specifity graph](https://jonassebastianohlsson.com/specificity-graph/)
+
+    When there are two or more selectors with the same specifity, cascade is applied, the last selector will be applied
+
+## Inheritance
+Some parent properties are applied to their childs
+   
  
