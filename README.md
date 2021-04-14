@@ -131,4 +131,17 @@ Inherited properties:
 
 Links `<a></a>` wont inherit any property, we can force inheritance with `inherit`.
 We can avoid inheritance with, `initial`
- 
+
+## Web development tools (F12)
+Elements -> HTML
+Styles from browser = user agent stylesheet
+Our styles = *.css
+Computed -> Properties applied to selected element and how them were calculated. WWe can also navigate to the source in the css file.
+
+## [Normalice CSS](https://necolas.github.io/normalize.css/)
+We can reset the default browser styles to display the same in all the browsers. We can download the [normalice.css](https://necolas.github.io/normalize.css/) and link it to the HTML **before** our stylesheet:
+
+    ```
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/styles.css">
+    ```
