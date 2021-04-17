@@ -121,14 +121,81 @@
 
 ## Inheritance
 Some parent properties are applied to their childs:
+
 ```
 <h1 id="title" class="title">Fundamentos de <span>CSS</span></h1>
 ```
+
 span tag gets some styles from h1 tag. If not everything will be a chaos
 Inherited properties:
 - color properties
 - font properties
 
 Links `<a></a>` wont inherit any property, we can force inheritance with `inherit`.
-We can avoid inheritance with, `initial`
- 
+We can avoid inheritance with, 
+`initial`.
+
+## Box model
+Each html element is rendered as a box composed by:
+
+- content
+- padding: distance from the content to the border
+- border: border of the box
+- margin: distance from the border to the next element
+- heigth: vertical size
+- width: horizontal size
+    
+We can change how the total size of the elements is calculated with box-sizing 
+
+## Heigth & Width
+The behaviour is different for block and line elements:
+
+- block elements: defined with the properties heigth and width
+- line elements: **inline elements haven't heidth or width, its size is determined by its content**
+
+## Margin
+This property margin allows us to generate space between elements, it's a shorcut for the 4 sides:
+
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+
+It supports up to four values on clock direction:
+
+- 4 values: top, right, bottom, left 
+- 3 values: top, right-left, bottom
+- 2 values: top-bottom, left-right
+- 1 values: all sides the same
+
+The behaviour is different for block and line elements:
+
+- block elements: defined with the properties heigth and width
+- line elements: **inline elements onnly have rigth and left margins**
+
+If we set margin to auto, it takes all the available space
+
+- Common errors:
+    
+    ```
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ```
+    It disables all the paddings and elements and it's necessary to reset all of them one by one.
+    ```
+    .block {
+        margin-top: 100px;
+        margin: 0 auto;
+
+        /* one way to solve it */
+        /* the element it's centered without loosing top value */
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ```
+    margin it's overwitting the margin-top value.
+
+**By default the body element has a 8px margin** so it's not bad to set body {margin: 0;}

@@ -1,0 +1,25 @@
+body {
+    background-color: darkslateblue;
+    color: #fff;
+    margin:0;
+}
+
+.header {
+    background-color: red;
+    height: 50px;
+}
+
+.tittle {
+    width: 300px;
+}
+
+.block {
+    background-color: darkturquoise;
+    width: 100px;
+    height: 100px;
+
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
