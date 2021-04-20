@@ -132,8 +132,13 @@ Inherited properties:
 - font properties
 
 Links `<a></a>` wont inherit any property, we can force inheritance with `inherit`.
+<<<<<<< Updated upstream
 We can avoid inheritance with, 
 `initial`.
+=======
+
+We can avoid inheritance with, `initial`
+>>>>>>> Stashed changes
 
 ## Web development tools (F12)
 Elements -> HTML
@@ -215,3 +220,5 @@ If we set margin to auto, it takes all the available space
 **By default the body element has a 8px margin** so it's not bad to set body {margin: 0;}
 We can avoid inheritance with, `initial`
 
+## Property prefixes
+We need to add some prefixes to the properties so that they can be interpreted correctly by browsers. We can use the [Autoprefixer tool](https://autoprefixer.github.io/) to solve this problem.
