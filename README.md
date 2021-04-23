@@ -322,3 +322,16 @@ It will draw an elipse with 50px on X radius and 100px on Y radius, when using w
     - border-top-rigth-radius: 100px 50px
     - border-bottom-left-radius: 150px 150px
     - border-bottom-rigth-radius: 200px 200px
+
+## Overflow
+The content overflows then the container is smaller than the content, this property controls the behaviour of the container when it's content overflows. It's also a shorthand of two properties:
+- overflow-x
+- overflow-y
+
+It has for values: 
+- visible: default value
+- hidden: the content that overflows will not be seen, if we apply this property to one axis the other will set with scroll
+- scroll: the scroll bars appear on the assigned axis
+- auto: scrollbars appear only when necessary
+
+When we have a container with border radius and its content overflows on the verts, we need to center the content and set `overflow: hidden` to round the content on the container verts
