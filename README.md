@@ -335,3 +335,19 @@ It has for values:
 - auto: scrollbars appear only when necessary
 
 When we have a container with border radius and its content overflows on the verts, we need to center the content and set `overflow: hidden` to round the content on the container verts
+
+## Margin collapse
+There is a problem with css, if we have two boxes one on top of the other, the first one with a `margin-bottom: 20px` and the second one with a `margin-top 20px`, the distance between them will not be 40px, but 20px. This is because the vertical margins collapse. There is no solution, the recomedation is to set only margin-bottom to avoid this behaviour. This only happens on vertical margins. There are another problem with vertical margins, when a child has a vertical margin it will be applied to the parent, we can solve it with:
+
+```
+.container {
+    //Hack 1
+    overflow: hidden;
+
+    //Hack 2, it creates space between the margin of the parent and the content of the child
+    padding-top: 0.1;
+
+    //Hack 3, it also creates space between ...
+    border-top: 0.1 solid red;
+}
+```

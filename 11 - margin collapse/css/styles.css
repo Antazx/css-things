@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslateblue;
+    margin: 0;
+}
+
+.header {
+    background-color: lightcoral;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.box-1,
+.box-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 250px;
+}
+
+.box-2 {
+    margin-top: 20px;
+}
