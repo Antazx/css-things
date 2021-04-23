@@ -260,3 +260,38 @@ All those properties are also shorthands:
     - border-right-color
     - border-bottom-color
     - border-left-color
+
+## Box sizing:
+This is the property that allows us to control the calculation made by the browser when modifying the content, padding and border properties. It has two values:
+
+- content-box: default value, size = content 
+- border-box: takes padding and border into account
+
+    ```
+        .box-model {
+            width: 400px;
+            height: 400px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            padding: 20px;
+            border: 5px solid black;
+        }
+    ```
+
+With content-box:
+- height: content: 400px + padding: 40px + 40px + border: 5px + 5px = 450px 
+- width: content: 400px + padding: 40px + 40px + border: 5px + 5px = 450px 
+
+With border-box:
+- height = 400px = content + padding + border
+- width = 400px = content + padding + border
+
+To set the same box-sizing for all the elements:
+
+```
+* {
+    box-sizing: border-box;
+}
+```

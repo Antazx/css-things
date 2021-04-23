@@ -55,3 +55,28 @@ body {
     border-bottom-style: ridge;
     border-left-style: outset;
 }
+
+.box-model {
+    width: 400px;
+    height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.bg-green {
+    background-color: green;
+}
+.bg-red {
+    background-color: red;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+.border-box {
+    box-sizing: border-box;
+}
