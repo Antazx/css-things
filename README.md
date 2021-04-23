@@ -222,3 +222,18 @@ We can avoid inheritance with, `initial`
 
 ## Property prefixes
 We need to add some prefixes to the properties so that they can be interpreted correctly by browsers. We can use the [Autoprefixer tool](https://autoprefixer.github.io/) to solve this problem.
+
+## Padding
+It is the property that allows us to generate internal space between the border and the box. It is a shorthand property that controls the 4 possible sides to give padding to:
+
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+
+Supports up to 4 values in clockwise order: 
+
+- 4 values: top, right, bottm, left 
+- 3 values: top, right/left, bottom
+- 2 values: top/bottom, left/right
+- 1 values: top/right/bottom/left
