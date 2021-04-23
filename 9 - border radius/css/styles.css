@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslateblue;
+    color:  #fff;
+    margin: 0;
+}
+
+.box {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+
+    width: 500px;
+    height: 500px;
+
+    background-color: #fff;
+    border-radius: 50px 100px 150px 200px/ 100px 50px 150px 200px;
+}

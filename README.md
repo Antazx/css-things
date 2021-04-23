@@ -295,3 +295,30 @@ To set the same box-sizing for all the elements:
     box-sizing: border-box;
 }
 ```
+
+## Border radius:
+This property allows us to round the vertices, it's a shorthand for four properties:
+
+- border-top-left-radius
+- border-top-rigth-radius
+- border-bottom-left-radius
+- border-bottom-rigth-radius
+
+With one value it will draw a circle on each vert and supports up to four values:
+
+- 1 values: top-left/top-rigth/bottom-right/bottom-left
+- 2 values: top-left/bottom-right, top-right/bottom-left
+- 3 values: top-left, top-right/bottom-left, bottom-right
+- 4 values: top-left, top-right, bottom-right, bottom-left
+
+With two values it will draw an elipse instead of a circle:
+```
+- border-top-left-radius: 50px 100px
+```
+It will draw an elipse with 50px on X radius and 100px on Y radius, when using with the sorthand its a strange sintaxis:
+
+- border-radius: 50px 100px 150px 200px/ 100px 50px 150px 200px;
+    - border-top-left-radius: 50px 100px
+    - border-top-rigth-radius: 100px 50px
+    - border-bottom-left-radius: 150px 150px
+    - border-bottom-rigth-radius: 200px 200px
