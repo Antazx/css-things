@@ -132,13 +132,8 @@ Inherited properties:
 - font properties
 
 Links `<a></a>` wont inherit any property, we can force inheritance with `inherit`.
-<<<<<<< Updated upstream
-We can avoid inheritance with, 
-`initial`.
-=======
 
 We can avoid inheritance with, `initial`
->>>>>>> Stashed changes
 
 ## Web development tools (F12)
 Elements -> HTML
@@ -153,6 +148,9 @@ We can reset the default browser styles to display the same in all the browsers.
     <link rel="stylesheet" href="css/normalice.css">
     <link rel="stylesheet" href="css/styles.css">
     ```
+
+## Property prefixes
+We need to add some prefixes to the properties so that they can be interpreted correctly by browsers. We can use the [Autoprefixer tool](https://autoprefixer.github.io/) to solve this problem.
 
 ## Box model
 Each html element is rendered as a box composed by:
@@ -220,9 +218,6 @@ If we set margin to auto, it takes all the available space
 **By default the body element has a 8px margin** so it's not bad to set body {margin: 0;}
 We can avoid inheritance with, `initial`
 
-## Property prefixes
-We need to add some prefixes to the properties so that they can be interpreted correctly by browsers. We can use the [Autoprefixer tool](https://autoprefixer.github.io/) to solve this problem.
-
 ## Padding
 It is the property that allows us to generate internal space between the border and the box. It is a shorthand property that controls the 4 possible sides to give padding to:
 
@@ -237,3 +232,31 @@ Supports up to 4 values in clockwise order:
 - 3 values: top, right/left, bottom
 - 2 values: top/bottom, left/right
 - 1 values: top/right/bottom/left
+
+Use padding to increase the size of our element, not to move it away from other elements.
+
+## Border
+It is the property that allows us to modify the element's border. Its a shorthand property that grop this other three:
+
+- border-width
+- border-style: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+- border-color
+- border: 10px solid red;
+
+All those properties are also shorthands:
+
+- border-width:
+    - border-top-width
+    - border-right-width
+    - border-bottom-width
+    - border-left-width
+- border-style:
+    - border-top-style
+    - border-right-style
+    - border-bottom-style
+    - border-left-style
+- border-color:
+    - border-top-color
+    - border-right-color
+    - border-bottom-color
+    - border-left-color

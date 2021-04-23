@@ -26,3 +26,32 @@ body {
     padding-left: 100px;
 }
 
+.buttons {
+    background-color: lightseagreen;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    margin-top: 10px;
+    margin-left: 630px;
+    padding: 10px 50px;
+
+    border: 5px solid red;
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: yellow;
+    border-left-color: green;
+
+    border-top-style: none;
+    border-right-style: hidden;
+    border-bottom-style: dotted;
+    border-left-style: dashed;
+}
+
+.crazy-borders {
+    border-top-style: double;
+    border-right-style: groove;
+    border-bottom-style: ridge;
+    border-left-style: outset;
+}
