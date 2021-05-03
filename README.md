@@ -359,3 +359,15 @@ It admits several values:
 - block: makes the element a block element
 - inline: makes the element a line element.
 - inline-block: makes the element inline but allows vertical dimensions and margins. When we have an element that is a line element but we need it to be a line element but we have to give it measures or vertical margins.
+
+## Outline
+Outline is the property that allows us to draw a border outside the box model. It is a shorthand containing:
+- outline-width: controls the width of the outline
+- outline-style: controls the outline style
+- outline-color: controls the colour of the outline
+
+It has the same properties and syntax as border, but with some differences.
+It does not occupy space, as it is not part of the box-model.
+You cannot control the sides independently.
+
+It also has the outline-offset property, which allows you to increase or decrease the distance of the outline in relation to the box it belongs to.

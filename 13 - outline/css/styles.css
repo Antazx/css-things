@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.border,
+.outline {
+    background-color: #666;
+    width: 100px;
+    padding: 10px 25px;
+    margin: 50px auto;
+}
+
+.border {
+    border: 2px solid lightgreen;
+}
+
+.outline {
+    border: 10px solid lightsalmon;
+    outline: 20px solid lightgreen;
+
+    outline-offset: -5px;
+}
