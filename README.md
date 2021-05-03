@@ -351,3 +351,11 @@ There is a problem with css, if we have two boxes one on top of the other, the f
     border-top: 0.1 solid red;
 }
 ```
+
+## Display
+The display property is used to change the context of the elements within the browser.
+It admits several values:
+- none: makes the element not to be displayed, but it is still loaded.
+- block: makes the element a block element
+- inline: makes the element a line element.
+- inline-block: makes the element inline but allows vertical dimensions and margins. When we have an element that is a line element but we need it to be a line element but we have to give it measures or vertical margins.
