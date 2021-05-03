@@ -371,3 +371,13 @@ It does not occupy space, as it is not part of the box-model.
 You cannot control the sides independently.
 
 It also has the outline-offset property, which allows you to increase or decrease the distance of the outline in relation to the box it belongs to.
+
+## Text align
+Text-align is the property that allows us to align the content of a block element horizontally as long as **the content does not have a delimited width**.
+
+- text-align: left; aligns content to the left
+- text-align: right; align content to the right
+- text-align: centre; aligns the content in the middle
+- text-align: justify; aligns the content justified. Not recommended
+
+**Centres the content, not the container**
