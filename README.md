@@ -381,3 +381,13 @@ Text-align is the property that allows us to align the content of a block elemen
 - text-align: justify; aligns the content justified. Not recommended
 
 **Centres the content, not the container**
+## Box shadow
+The box-shadow property was created to add shadow effects to our box. What it does is to create a duplicate of the box respecting the shape of its box-model (width, height, roundness).
+
+The syntax of box-shadow can be written in different ways, depending on our objective, we can give it the following values:
+- offset-x: offset in x. Mandatory
+- offset-y: offset in y. Mandatory
+- blur-radius: blur of the shadow
+- spread-radius: shadow expansion
+- colour: colour of the shadow, if not specified it will inherit the colour of the element it belongs to.
+- inset: determines if the shadow will be inner or outer
