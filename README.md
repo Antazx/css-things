@@ -391,3 +391,28 @@ The syntax of box-shadow can be written in different ways, depending on our obje
 - spread-radius: shadow expansion
 - colour: colour of the shadow, if not specified it will inherit the colour of the element it belongs to.
 - inset: determines if the shadow will be inner or outer
+
+## Position
+The position property allows us to position the elements. There are some concepts we need to understand:
+
+- **Rendered flow**: As a general rule, elements are drawn from left to right and from top to bottom. The 0,0 point of the elements, as a general rule, is the upper left corner.
+- **Reserved space**: This is the space that an element is assigned in the browser.
+- **Positioned element**: This means that the element has the position property with a value other than "static", which is the default value for this property.
+- **Staking context**: Stacking context. This is the order in which overlapping boxes will be stacked in the same container.
+
+When positioning an element, 5 properties are enabled that we can use to move the elements in the 3 axes:
+
+- top: the element will move from the top the distance we have indicated.
+- right: the element will move from the right side the distance we have indicated.
+- bottom: the element will move from the bottom the distance we have indicated.
+- left: the element will move from the left side the distance we have indicated.
+- z-index: allows you to move the element in the stacking context (z-axis).
+
+**NOTE: If we declare the top and/or left property for an element, the bottom and/or right properties will not work**
+
+The possible values that position can has are:
+- static: This is the default value, with this value the element is not positioned and therefore we cannot move it.
+- relative: The element will maintain its position, measurements in the rendering flow and its reserved space. If we move it, it will do so using its position in the html as a reference point.
+- absolute: The element will lose its measurements and its reserved space. If we move it, it will use the parent element positioned with reference. If they have none, it will use that of the referenced html element.
+- fixed: The element will lose its measurements and its reserved space. If we move it, it will use the reference html element and it will remain fixed in that position even if we scroll.
+- Sticky: is a mix of position relative and fixed. With this type of positioning the values top, left, bottom and right are not used to move the element, but to indicate at what point it will have a fixed positioning behaviour, until that point it will behave as if it had relative.
