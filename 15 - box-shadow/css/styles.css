@@ -9,5 +9,7 @@
     text-align: center;
     margin: 300px auto;
     border-radius: 30px;
-    box-shadow: 5px 5px 10px 20px blue;
+    /* box-shadow: 5px 5px 10px 20px blue; */
+    /* box-shadow: inset -5px -5px 10px 0; */
+    box-shadow: 5px 5px red, 10px 10px blue, 15px 15px green;
 }
