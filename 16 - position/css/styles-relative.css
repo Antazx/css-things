@@ -7,13 +7,14 @@ body {
     background-color: #333;
 }
 
+
 .box {
     width: 100px;
     height: 100px;
-} 
+    text-align: center;
+}
 
-.box-1 {
-    background-color: lightcoral;
+.box-relative {
     position: relative;
     /* It moves the element 100px to the left, but the original space is not used by box-2*/
     /* left: 100px;
@@ -21,6 +22,16 @@ body {
 
     left: 50px;
     top: 50px;
+}
+
+.box-absolute {
+    position: absolute;
+}
+
+.box-1 {
+    background-color: lightcoral;
+    bottom: 0;
+    right: 0;
 }
 .box-2 {
       background-color: lightgreen;

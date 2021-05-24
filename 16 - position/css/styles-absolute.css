@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.box-relative {
+    position: relative;
+    /* It moves the element 100px to the left, but the original space is not used by box-2*/
+    /* left: 100px;
+    top: 100px; */
+
+    left: 50px;
+    top: 50px;
+}
+
+.box-absolute {
+    position: absolute;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: peru;
+    position: relative;
+}
+
+.box-1 {
+    background-color: lightcoral;
+    left:100px;
+    bottom: 100px;
+}
+.box-2 {
+    background-color: lightgreen;
+    left:100px;
+    bottom: 100px;
+}
