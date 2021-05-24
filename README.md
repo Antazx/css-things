@@ -415,4 +415,5 @@ The possible values that position can has are:
 - relative: The element will maintain its position, measurements in the rendering flow and its reserved space. If we move it, it will do using its position in the html as a reference point.
 - absolute: The element will lose its measurements and its reserved space. If we move it, it will use the parent element **positioned** with reference. If they have none, it will use that of the referenced html element.
 - fixed: The element will lose its measurements and its reserved space. If we move it, it will use the reference html element and it will remain fixed in that position even if we scroll.
-- Sticky: is a mix of position relative and fixed. With this type of positioning the values top, left, bottom and right are not used to move the element, but to indicate at what point it will have a fixed positioning behaviour, until that point it will behave as if it had relative.
+- Sticky: is a mix of position relative and fixed. With this type of positioning the values top, left, bottom and right are not used to move the element, but to indicate at what point it will have a fixed positioning behaviour, until that point it will behave as if it had relative. It will count as positioned if we have to position other element based on it. Does not work with **overflow: !visible**
+

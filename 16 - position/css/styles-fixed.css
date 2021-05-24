@@ -12,8 +12,8 @@ body {
 .header {
     text-align: center;
     padding: 25px 0;
-    background-color: lightcyan;
     color: grey;
+    background-color: lightcyan;
 
     width: 100%;
     position: fixed;
