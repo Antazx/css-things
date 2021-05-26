@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    color: lightpink;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.link {
+    background-color: lightpink;
+    color: grey;
+
+    /*We use rem for the font size but em for other measures to keep the relation with the element text*/
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+}
+
+.container {
+    position: relative;
+    top: 0;
+    left: 1000px;
+
+    height: 400px;
+    width: 100%;
+}
+
+.parent-box {
+    height: 400px;
+    width: 400px;
+    background-color: mediumseagreen;
+}
+
+.child-box {
+    height: 200px;
+    width: 200px;
+    background-color: mediumslateblue;
+}

@@ -444,3 +444,36 @@ It is important to order the properties, there is no standard or specification o
 4. Visual properties (colours, borders, background...)
 5. The rest of the properties
 
+## CSS Units
+The units of measurement in CSS can be grouped into 2 groups, absolute and relative:
+
+- Absolute measurements ** DO NOT CHANGE** and will always maintain their size regardless of the device or user interaction. The most commonly used is px (pixels) whose measurement is 1/96 of 1in, but there are others such as:
+
+    - cm (centimetres): 1cm = 96px/2,54
+    - mm (millimetres): 1mm = 1/10 of 1cm
+    - Q (quarter of a millimetre): 1Q = 1/40 of 1cm
+    - in (inches): 1in = 2,54 cm = 96px
+    - pc (picas): 1pc = 1/16 of 1in
+    - pt (points): 1pt = 1/72 of 1in
+
+- Relative measurements **ALWAYS** depend on a context, they are the ones recommended to use in most occasions because they will allow all the elements to scale proportionally. The most commonly used are: 
+
+    - rem: corresponds to the size of the "m" of the root of the document (html)
+    - em: corresponds to the size of the "m" of the context where we are.
+    - %: is used to size the element according to the size of the container. Useful for responsive elements.
+    - vw
+    - vh
+    - vmin
+    - vmax
+    - ex: Height x of the source of the element.
+    - ch: The measure of the width of the glyph "0" of the element's letter.
+    - lh: The line height of the element.
+
+The standard default font size in the root of the document is 16px and it is not recommended to modify it. 
+Note: both "em" and "rem" are calculated based on the font-size property. 16px = 1 rem. For font sizes, best practice is to use rem, so all the text are related with the same measure. We use rem for the font size but em for other measures to keep the relation with the element text.
+
+- Working with widths: 
+
+    - auto vs 100%: with auto the browser will calculate the size based on available space. It is the best option when we want an element to occupy all available space in one direction but we also want to add properties that modify its size such as margins or padding. Avoid overflow problems
+
+- Working with heights: 
