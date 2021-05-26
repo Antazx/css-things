@@ -434,3 +434,13 @@ The order is determined (from front to back):
 - Elements with a negative z-index
 
 As a summary, it is not always necessary to use z-index to solve overlapping problems, usually just positioning the element is enough.
+
+## Property order
+It is important to order the properties, there is no standard or specification on how to do this, but most experts agree on the same points:
+
+1. Positioning properties
+2. Box-model properties
+3. Text properties 
+4. Visual properties (colours, borders, background...)
+5. The rest of the properties
+

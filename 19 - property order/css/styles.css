@@ -1,0 +1,30 @@
+/* Property order */
+
+body {
+    /* Position */
+    position: relative;
+    top: 0;
+    left: 0;
+
+    /* Box model */
+    display: block;
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+
+    /* Text properties */
+    font-size: 16px;
+    text-align: center;
+    font-weight: 100;
+
+    /* Visual properties */
+    color: blue;
+    border: 2px dotted red;
+    border-radius: 15px;
+
+    /* Other properties */
+    opacity: 0.85;
+    /* animations, transformations */
+}
