@@ -423,3 +423,14 @@ When two elements overlap we can choose which element is on top of the other. Th
 For parent-child elements when we want the parent to be above the child, we have to put the child below the parent, with a negative z-index value, if we give z-index to the parent this will stop working.
 
 If two elements have the same z-index value, who is above the other will be determined by the order of appearance in the html, the last one will be the one that is higher.
+
+## Stacking context
+The stacking context is the space where our elements will be stacked so that some are at the back and others at the front.
+
+The order is determined (from front to back):
+- Elements positioned with a z-index of 1 or more.
+- Elements positioned with no declared z-index (or z-index: auto)
+- Elements not positioned
+- Elements with a negative z-index
+
+As a summary, it is not always necessary to use z-index to solve overlapping problems, usually just positioning the element is enough.
