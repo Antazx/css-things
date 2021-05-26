@@ -417,3 +417,9 @@ The possible values that position can has are:
 - fixed: The element will lose its measurements and its reserved space. If we move it, it will use the reference html element and it will remain fixed in that position even if we scroll.
 - Sticky: is a mix of position relative and fixed. With this type of positioning the values top, left, bottom and right are not used to move the element, but to indicate at what point it will have a fixed positioning behaviour, until that point it will behave as if it had relative. It will count as positioned if we have to position other element based on it. Does not work with **overflow: !visible**
 
+## Z-index
+When two elements overlap we can choose which element is on top of the other. The one with the higher value will be on top of the other. It is not a good idea to use consecutive numbers (1, 2, 3, ...), if we have to put an element between 1 and 2 we could not. It is better to use 100, 200, 300, ... so if we have to add another element in between we can give it value 101 102 ...
+
+For parent-child elements when we want the parent to be above the child, we have to put the child below the parent, with a negative z-index value, if we give z-index to the parent this will stop working.
+
+If two elements have the same z-index value, who is above the other will be determined by the order of appearance in the html, the last one will be the one that is higher.

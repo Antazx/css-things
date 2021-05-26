@@ -35,3 +35,16 @@ body {
     left: 450px;
     z-index: 0;
 }
+
+.container {
+    position: absolute;
+    top: 650px;
+    height: 400px;
+    width: 400px;
+    background-color: lightslategray;
+}
+
+.box-4 {
+    background-color: red;
+    z-index: -1;
+}
