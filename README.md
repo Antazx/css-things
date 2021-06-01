@@ -483,3 +483,5 @@ Note: both "em" and "rem" are calculated based on the font-size property. 16px =
     - auto: browser will calculate the height based on the content
 
 Note: Heigth it is a property to be used with care. If it is not necessary to set a height, let the content decide the height of the element.
+
+Note 2: When we have a height declared with a percentage (in relation to the height of its container) and we position the element with absolute and  fixed, the height of the element will be calculated based on the viewport (all the available space).

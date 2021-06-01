@@ -34,8 +34,9 @@ body {
 }
 
 .child-box {
-    height: 200px;
-    width: 200px;
+    position: absolute;
+    height: 50%;
+    width: 50%;
     background-color: mediumslateblue;
 }
 /* .container {
