@@ -477,3 +477,9 @@ Note: both "em" and "rem" are calculated based on the font-size property. 16px =
     - auto vs 100%: with auto the browser will calculate the size based on available space. It is the best option when we want an element to occupy all available space in one direction but we also want to add properties that modify its size such as margins or padding. Avoid overflow problems
 
 - Working with heights: 
+
+    - %: when it's inside a container, this container must have a declared height, if not it can't calculate the percentage. If a percentage measure is applied to it, it will be automatically replaced by auto
+
+    - auto: browser will calculate the height based on the content
+
+Note: Heigth it is a property to be used with care. If it is not necessary to set a height, let the content decide the height of the element.

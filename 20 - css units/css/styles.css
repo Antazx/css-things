@@ -21,10 +21,10 @@ body {
 .container {
     position: relative;
     top: 0;
-    left: 1000px;
+    left: 40%;
 
     height: 400px;
-    width: 100%;
+    width: 600px;
 }
 
 .parent-box {
@@ -38,3 +38,23 @@ body {
     width: 200px;
     background-color: mediumslateblue;
 }
+/* .container {
+    position: relative;
+    top: 0;
+    left: 40%;
+
+    height: 400px;
+    width: 600px;
+}
+
+.parent-box {
+    height: 400px;
+    width: 400px;
+    background-color: mediumseagreen;
+}
+
+.child-box {
+    height: 200px;
+    width: 200px;
+    background-color: mediumslateblue;
+} */
