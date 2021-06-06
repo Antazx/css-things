@@ -485,3 +485,21 @@ Note: both "em" and "rem" are calculated based on the font-size property. 16px =
 Note: Heigth it is a property to be used with care. If it is not necessary to set a height, let the content decide the height of the element.
 
 Note 2: When we have a height declared with a percentage (in relation to the height of its container) and we position the element with absolute and  fixed, the height of the element will be calculated based on the viewport (all the available space).
+
+## Viewport units:
+
+El viewport es el área útil donde se motrará la página web. IMPORTANTE: es el área visible sin hacer scroll.
+
+Podemos usar el viewport como medida de variasl formas:
+
+- vw: viewport width, hace referencia al ancho del viewport
+- vh: viewport width, hace referencia al alto del viewport
+- vmax: utiliza el valor más grande entre al ancho y el alto del viewport
+- vmin: utiliza el valor más pequeño entre el ancho y el alto del viewport
+
+Units relative to viewport:
+
+- 1vw: 1% of viewport width
+- 1vh: 1% of viewport heigth
+- 1vmin = 1% of the lower viewport value
+- 1vmax = 1% of the higher viewport value 
